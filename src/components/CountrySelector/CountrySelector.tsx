@@ -47,8 +47,7 @@ function CountrySelector () {
         if (countries && countries.length > 0) {
             sortCountriesAlphabetically(countries || []);
             if (lastSelectedCountry) {
-                let getCountry: any;
-                getCountry = countries.filter(country => {
+                const getCountry = countries.filter(country => {
                     return country.cca2 === lastSelectedCountry;
                 })
                 // Set country from local storage
