@@ -10,6 +10,9 @@ Run `npm run start`
 `localhost:3000`
 
 ## Description
+
+While input is focued text can be written even if a country is currently selected.
+
 Two available lists
 
 `Available countries` Are the total list of countries available
