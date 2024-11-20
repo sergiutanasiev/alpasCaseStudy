@@ -21,7 +21,8 @@ Two available lists
 # Search features
 when searching by matcthing caa2 country will be first in list ex: `DE` first in suggested list will be `Germany`
 
-Selected country either clicked or highlited and selected by clicking enter will be saved to local storage upon refreshing the page the country will be reselected
+Selected country will be saved to local storage.\
+Upon refreshing the page the country will be reselected
 
 To remove the country from localstorage click clear
 
