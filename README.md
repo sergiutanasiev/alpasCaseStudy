@@ -11,7 +11,7 @@ Run `npm run start`
 
 ## Description
 
-While input is focued text can be written even if a country is currently selected.
+While input is focused text can be written even if a country is currently selected.
 
 Two available lists
 
