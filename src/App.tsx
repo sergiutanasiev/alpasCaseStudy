@@ -1,19 +1,17 @@
 import React from 'react';
 import './App.css';
-import CountrySelector from './components/CountrySelector';
+import CountrySelector from './components/CountrySelector/CountrySelector';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
     <div className="App">
-      <div>
+      <QueryClientProvider client={queryClient}>
         <CountrySelector></CountrySelector>
-      </div>
+      </QueryClientProvider>
     </div>
-    </QueryClientProvider>
   );
 }
 

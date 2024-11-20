@@ -1,7 +1,0 @@
-.countries-list {
-    max-height: 300px;
-    overflow-y: scroll;
-}
-.country-highlited {
-    color: red;
-}
