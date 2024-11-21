@@ -83,20 +83,21 @@ function CountrySelector () {
         selectedCountry !== null && inputRef.current &&  inputRef.current.value.trim() !== "" ?
             setIsSelectedCountryVisible(false) : setIsSelectedCountryVisible(true)
 
+            const searchedValue = e.target.value.toLowerCase()
         if (!isVisible) {
             setIsVisible(true);
         }
 
         // Check for cca2 matches first ex: DE
         const caa2Matches = filteredCountries.filter(coutry => {
-            return coutry.cca2.toLowerCase() === e.target.value;
+            return coutry.cca2.toLowerCase() === searchedValue;
         })
 
         // Check for matching country name
         let similarMatches = filteredCountries!.filter(country =>
-            country.name.common.toLowerCase().includes(e.target.value)
+            country.name.common.toLowerCase().includes(searchedValue)
         ).sort((a, b) =>
-            a.name.common.toLowerCase().indexOf(e.target.value) - b.name.common.toLowerCase().indexOf(e.target.value)
+            a.name.common.toLowerCase().indexOf(searchedValue) - b.name.common.toLowerCase().indexOf(searchedValue)
         );
 
         // Remove duplicates
